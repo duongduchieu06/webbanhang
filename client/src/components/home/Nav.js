@@ -13,7 +13,7 @@ const Nav = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <nav className="nav">
+      <nav style={{backgroundColor: '#ffb0bd'}} className="nav">
         <div className="my-container">
           <div className="flex justify-between items-center">
             <Link to="/">
