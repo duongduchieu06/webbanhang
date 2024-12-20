@@ -17,7 +17,7 @@ const HomeProduct = ({ category }) => {
             {category.name}
           </span>
           <span className="capitalize">
-            <Link to={`/cat-products/${category.name}`}>see all</Link>
+            <Link to={`/cat-products/${category.name}`}>Thêm</Link>
           </span>
         </div>
         <div className="flex flex-wrap -mx-5">

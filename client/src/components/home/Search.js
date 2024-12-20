@@ -36,7 +36,7 @@ const Search = () => {
               name=""
               id=""
               className="w-full bg-white h-[50px] rounded outline-none pl-5 pr-14"
-              placeholder="Search products...."
+              placeholder="Nhập tên sản phẩm...."
               value={state}
               onChange={(e) => setState(e.target.value)}
             />

@@ -43,7 +43,7 @@ const AdminLogin = () => {
                  <input type="password" name="password" className="w-full bg-black1 p-4 rounded outline-none text-white" onChange={handleInputs} value={state.password} placeholder="Enter password..." />
              </div>
              <div className="mb-4">
-                 <input type="submit" value={response.isLoading ? 'Loading...' : 'sign in'} className="bg-indigo-600 w-full p-4 rounded text-white uppercase font-semibold cursor-pointer" />
+                 <input type="submit" value={response.isLoading ? 'Loading...' : 'Đăng Nhập'} className="bg-indigo-600 w-full p-4 rounded text-white uppercase font-semibold cursor-pointer" />
              </div>
             </form>
         </div>

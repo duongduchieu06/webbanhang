@@ -24,7 +24,7 @@ const SearchProducts = () => {
         ) : data.count > 0 ? (
           <>
             <p className="text-base font-medium text-gray-700">
-              {data.count} products found for #{keyword} keyword
+              {data.count} sản phẩm được tìm thấy bởi từ khóa #{keyword}
             </p>
             <div className="flex flex-wrap -mx-5">
               {data.products.map((product) => {
@@ -41,7 +41,7 @@ const SearchProducts = () => {
           </>
         ) : (
           <p className="alert-danger">
-            No products found for #{keyword} keyword
+            Không có sản phẩm nào mang từ khóa #{keyword} 
           </p>
         )}
       </div>

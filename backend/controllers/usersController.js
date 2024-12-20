@@ -22,7 +22,7 @@ module.exports.register = async (req, res) => {
                 return res.status(201).json({msg: 'Tài khoản của bạn đã được tạo thành công!', token});
             } else {
                 // email already taken
-                return res.status(400).json({errors: [{msg: `${email} đã được nhận`, param: 'email'}]})
+                return res.status(400).json({errors: [{msg: `${email} đã có sẵn`, param: 'email'}]})
             }
         } catch (error) {
             console.log(error.message);

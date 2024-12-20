@@ -35,7 +35,7 @@ const Nav = () => {
               ) : (
                 <li className="nav-li">
                   <Link to="/login" className="nav-link">
-                    sign in
+                    Đăng Nhập
                   </Link>
                 </li>
               )}

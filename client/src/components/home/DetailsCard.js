@@ -50,7 +50,7 @@ const DetailsCard = ({ product }) => {
       cartItems.push(newProduct);
       localStorage.setItem("cart", JSON.stringify(cartItems));
     } else {
-      toast.error(`${newProduct.title} is already in cart`);
+      toast.error(`${newProduct.title} đã có trong giỏ hàng`);
       return;
     }
   };
@@ -75,17 +75,17 @@ const DetailsCard = ({ product }) => {
         <div className="flex justify-between my-5">
           <span className="text-2xl font-bold text-gray-900">
             {" "}
-            {currency.format(discountPrice, { code: "USD" })}
+            {currency.format(discountPrice, { code: "vnđ" })}
           </span>
           <span className="text-xl line-through text-gray-500">
-            {currency.format(product.price, { code: "USD" })}
+            {currency.format(product.price, { code: "vnđ" })}
           </span>
         </div>
 
         {product.sizes.length > 0 && (
           <>
             <h3 className="text-base font-medium capitalize text-gray-600 mb-3">
-              sizes
+              Kích thước
             </h3>
             <div className="flex flex-wrap -mx-1">
               {product.sizes.map((size) => (
@@ -111,7 +111,7 @@ const DetailsCard = ({ product }) => {
         {product.colors.length > 0 && (
           <>
             <h3 className="text-base font-medium capitalize text-gray-600 mb-2 mt-3">
-              colors
+              Màu
             </h3>
             <div className="flex flex-wrap -mx-1">
               {product.colors.map((color) => (
@@ -139,12 +139,12 @@ const DetailsCard = ({ product }) => {
           </div>
           <div className="w-full sm:w-6/12 p-3">
             <button className="btn btn-indigo" onClick={addToCart}>
-              add to cart
+               Thêm vào giỏ hàng
             </button>
           </div>
         </div>
         <h3 className="text-base font-medium capitalize text-gray-600 mb-2 mt-3">
-          description
+          Mô Tả
         </h3>
         <div className="mt-4 leading-[27px] description">{desc}</div>
       </div>
